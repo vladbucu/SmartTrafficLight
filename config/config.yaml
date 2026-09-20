@@ -1,0 +1,48 @@
+# Traffic light CV — configuration
+# IMPORTANT: zone polygons below are PLACEHOLDERS. They must be recalibrated
+# against a real frame from the actual pole camera once it's mounted/aimed.
+
+model:
+  weights: yolov8n.pt
+  conf_threshold: 0.35
+  iou_threshold: 0.5
+  device: cpu              # switch to 0 if/when running on a CUDA device
+  classes: [2, 3, 5, 7]     # COCO ids: car, motorcycle, bus, truck
+  tracker: bytetrack.yaml
+
+zones:
+  # Normalized (0-1) polygon points, origin top-left.
+  # queue_zone: where OWN-side vehicles stack up waiting for green.
+  queue_zone:
+    - [0.03, 0.55]
+    - [0.45, 0.55]
+    - [0.45, 0.97]
+    - [0.03, 0.97]
+  # through_zone: where vehicles arriving FROM the opposite pole's green
+  # phase are watched, to confirm they've cleared this end of the corridor.
+  through_zone:
+    - [0.55, 0.25]
+    - [0.97, 0.25]
+    - [0.97, 0.65]
+    - [0.55, 0.65]
+  # crossing_line: a track passing from the "before" side to the "passed_side"
+  # of this line (inside/at the edge of through_zone) increments passed_count.
+  crossing_line:
+    p1: [0.75, 0.20]
+    p2: [0.75, 0.75]
+    passed_side: right   # right of the directed line p1->p2, in image coords
+
+queue_counter:
+  stationary_window_sec: 2.5
+  stationary_max_disp_frac: 0.02   # max centroid displacement (frac of frame diagonal) to count as "stationary"
+  min_track_age_sec: 1.0
+
+state_machine:
+  min_green_sec: 15          # floor — never switch faster than this (avoid flapping)
+  max_green_sec: 120         # ceiling — "2 minutes per lane" fallback the user specified
+  red_wait_fallback_sec: 90  # PLACEHOLDER — must be derived from real corridor length /
+                              # conservative min vehicle speed. If vision never confirms
+                              # the corridor clear within this window, force it clear
+                              # (fixed-timer safety floor, same principle commercial
+                              # portable traffic signals use) and log a warning event.
+  queue_tie_breaker: alternate
