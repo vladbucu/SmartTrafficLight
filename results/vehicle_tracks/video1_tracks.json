@@ -1,0 +1,691 @@
+{
+ "fps": 25.0,
+ "total_frames": 943,
+ "unique_vehicle_tracks": 57,
+ "tracks": {
+  "1": {
+   "class": "car",
+   "first": 1,
+   "last": 35,
+   "max_conf": 0.92,
+   "bbox_last": [
+    12,
+    220,
+    92,
+    284
+   ]
+  },
+  "2": {
+   "class": "car",
+   "first": 1,
+   "last": 28,
+   "max_conf": 0.85,
+   "bbox_last": [
+    175,
+    240,
+    275,
+    285
+   ]
+  },
+  "3": {
+   "class": "car",
+   "first": 1,
+   "last": 61,
+   "max_conf": 0.96,
+   "bbox_last": [
+    0,
+    409,
+    159,
+    704
+   ]
+  },
+  "4": {
+   "class": "car",
+   "first": 1,
+   "last": 197,
+   "max_conf": 0.96,
+   "bbox_last": [
+    0,
+    500,
+    261,
+    712
+   ]
+  },
+  "5": {
+   "class": "car",
+   "first": 1,
+   "last": 12,
+   "max_conf": 0.78,
+   "bbox_last": [
+    288,
+    254,
+    455,
+    367
+   ]
+  },
+  "6": {
+   "class": "car",
+   "first": 1,
+   "last": 17,
+   "max_conf": 0.6,
+   "bbox_last": [
+    320,
+    232,
+    441,
+    298
+   ]
+  },
+  "7": {
+   "class": "bus",
+   "first": 1,
+   "last": 671,
+   "max_conf": 0.96,
+   "bbox_last": [
+    0,
+    1,
+    429,
+    719
+   ]
+  },
+  "9": {
+   "class": "car",
+   "first": 28,
+   "last": 29,
+   "max_conf": 0.46,
+   "bbox_last": [
+    292,
+    234,
+    397,
+    268
+   ]
+  },
+  "11": {
+   "class": "car",
+   "first": 37,
+   "last": 94,
+   "max_conf": 0.85,
+   "bbox_last": [
+    274,
+    252,
+    446,
+    389
+   ]
+  },
+  "12": {
+   "class": "car",
+   "first": 38,
+   "last": 52,
+   "max_conf": 0.7,
+   "bbox_last": [
+    0,
+    245,
+    452,
+    463
+   ]
+  },
+  "15": {
+   "class": "car",
+   "first": 42,
+   "last": 48,
+   "max_conf": 0.7,
+   "bbox_last": [
+    0,
+    252,
+    380,
+    400
+   ]
+  },
+  "17": {
+   "class": "motorcycle",
+   "first": 46,
+   "last": 83,
+   "max_conf": 0.87,
+   "bbox_last": [
+    0,
+    341,
+    172,
+    705
+   ]
+  },
+  "21": {
+   "class": "car",
+   "first": 49,
+   "last": 189,
+   "max_conf": 0.72,
+   "bbox_last": [
+    277,
+    245,
+    395,
+    308
+   ]
+  },
+  "23": {
+   "class": "car",
+   "first": 51,
+   "last": 104,
+   "max_conf": 0.93,
+   "bbox_last": [
+    81,
+    253,
+    185,
+    369
+   ]
+  },
+  "27": {
+   "class": "car",
+   "first": 54,
+   "last": 173,
+   "max_conf": 0.9,
+   "bbox_last": [
+    110,
+    251,
+    231,
+    313
+   ]
+  },
+  "28": {
+   "class": "motorcycle",
+   "first": 55,
+   "last": 95,
+   "max_conf": 0.87,
+   "bbox_last": [
+    0,
+    324,
+    239,
+    642
+   ]
+  },
+  "30": {
+   "class": "car",
+   "first": 63,
+   "last": 89,
+   "max_conf": 0.46,
+   "bbox_last": [
+    832,
+    254,
+    866,
+    321
+   ]
+  },
+  "32": {
+   "class": "motorcycle",
+   "first": 66,
+   "last": 89,
+   "max_conf": 0.61,
+   "bbox_last": [
+    462,
+    321,
+    593,
+    553
+   ]
+  },
+  "34": {
+   "class": "car",
+   "first": 83,
+   "last": 102,
+   "max_conf": 0.56,
+   "bbox_last": [
+    8,
+    182,
+    90,
+    252
+   ]
+  },
+  "35": {
+   "class": "car",
+   "first": 84,
+   "last": 95,
+   "max_conf": 0.6,
+   "bbox_last": [
+    0,
+    192,
+    383,
+    371
+   ]
+  },
+  "37": {
+   "class": "motorcycle",
+   "first": 95,
+   "last": 179,
+   "max_conf": 0.91,
+   "bbox_last": [
+    6,
+    256,
+    51,
+    297
+   ]
+  },
+  "38": {
+   "class": "car",
+   "first": 99,
+   "last": 158,
+   "max_conf": 0.9,
+   "bbox_last": [
+    260,
+    253,
+    459,
+    375
+   ]
+  },
+  "44": {
+   "class": "car",
+   "first": 116,
+   "last": 128,
+   "max_conf": 0.61,
+   "bbox_last": [
+    508,
+    241,
+    604,
+    314
+   ]
+  },
+  "46": {
+   "class": "motorcycle",
+   "first": 124,
+   "last": 149,
+   "max_conf": 0.86,
+   "bbox_last": [
+    0,
+    252,
+    190,
+    664
+   ]
+  },
+  "47": {
+   "class": "car",
+   "first": 139,
+   "last": 143,
+   "max_conf": 0.61,
+   "bbox_last": [
+    704,
+    270,
+    803,
+    350
+   ]
+  },
+  "50": {
+   "class": "motorcycle",
+   "first": 151,
+   "last": 151,
+   "max_conf": 0.68,
+   "bbox_last": [
+    0,
+    410,
+    69,
+    703
+   ]
+  },
+  "52": {
+   "class": "car",
+   "first": 178,
+   "last": 186,
+   "max_conf": 0.67,
+   "bbox_last": [
+    482,
+    243,
+    562,
+    355
+   ]
+  },
+  "53": {
+   "class": "car",
+   "first": 180,
+   "last": 238,
+   "max_conf": 0.91,
+   "bbox_last": [
+    205,
+    312,
+    294,
+    418
+   ]
+  },
+  "55": {
+   "class": "car",
+   "first": 186,
+   "last": 245,
+   "max_conf": 0.9,
+   "bbox_last": [
+    38,
+    258,
+    215,
+    384
+   ]
+  },
+  "56": {
+   "class": "car",
+   "first": 190,
+   "last": 253,
+   "max_conf": 0.92,
+   "bbox_last": [
+    0,
+    266,
+    136,
+    530
+   ]
+  },
+  "58": {
+   "class": "car",
+   "first": 641,
+   "last": 755,
+   "max_conf": 0.96,
+   "bbox_last": [
+    0,
+    491,
+    235,
+    714
+   ]
+  },
+  "59": {
+   "class": "car",
+   "first": 651,
+   "last": 664,
+   "max_conf": 0.44,
+   "bbox_last": [
+    829,
+    231,
+    889,
+    287
+   ]
+  },
+  "60": {
+   "class": "car",
+   "first": 660,
+   "last": 680,
+   "max_conf": 0.7,
+   "bbox_last": [
+    614,
+    235,
+    695,
+    295
+   ]
+  },
+  "61": {
+   "class": "car",
+   "first": 663,
+   "last": 712,
+   "max_conf": 0.93,
+   "bbox_last": [
+    311,
+    244,
+    509,
+    378
+   ]
+  },
+  "62": {
+   "class": "motorcycle",
+   "first": 671,
+   "last": 695,
+   "max_conf": 0.84,
+   "bbox_last": [
+    0,
+    452,
+    137,
+    717
+   ]
+  },
+  "63": {
+   "class": "car",
+   "first": 673,
+   "last": 683,
+   "max_conf": 0.9,
+   "bbox_last": [
+    0,
+    252,
+    210,
+    624
+   ]
+  },
+  "64": {
+   "class": "car",
+   "first": 679,
+   "last": 842,
+   "max_conf": 0.96,
+   "bbox_last": [
+    0,
+    496,
+    268,
+    711
+   ]
+  },
+  "65": {
+   "class": "car",
+   "first": 684,
+   "last": 798,
+   "max_conf": 0.87,
+   "bbox_last": [
+    154,
+    213,
+    288,
+    290
+   ]
+  },
+  "66": {
+   "class": "car",
+   "first": 688,
+   "last": 730,
+   "max_conf": 0.94,
+   "bbox_last": [
+    17,
+    229,
+    144,
+    335
+   ]
+  },
+  "68": {
+   "class": "car",
+   "first": 708,
+   "last": 943,
+   "max_conf": 0.97,
+   "bbox_last": [
+    0,
+    273,
+    602,
+    711
+   ]
+  },
+  "71": {
+   "class": "car",
+   "first": 731,
+   "last": 810,
+   "max_conf": 0.62,
+   "bbox_last": [
+    789,
+    201,
+    849,
+    255
+   ]
+  },
+  "72": {
+   "class": "car",
+   "first": 733,
+   "last": 755,
+   "max_conf": 0.67,
+   "bbox_last": [
+    512,
+    213,
+    600,
+    275
+   ]
+  },
+  "74": {
+   "class": "car",
+   "first": 736,
+   "last": 786,
+   "max_conf": 0.91,
+   "bbox_last": [
+    225,
+    218,
+    434,
+    352
+   ]
+  },
+  "77": {
+   "class": "car",
+   "first": 747,
+   "last": 806,
+   "max_conf": 0.9,
+   "bbox_last": [
+    27,
+    228,
+    106,
+    297
+   ]
+  },
+  "79": {
+   "class": "car",
+   "first": 801,
+   "last": 943,
+   "max_conf": 0.94,
+   "bbox_last": [
+    695,
+    200,
+    945,
+    401
+   ]
+  },
+  "85": {
+   "class": "car",
+   "first": 819,
+   "last": 862,
+   "max_conf": 0.8,
+   "bbox_last": [
+    647,
+    203,
+    727,
+    263
+   ]
+  },
+  "87": {
+   "class": "car",
+   "first": 821,
+   "last": 893,
+   "max_conf": 0.92,
+   "bbox_last": [
+    410,
+    223,
+    625,
+    368
+   ]
+  },
+  "88": {
+   "class": "car",
+   "first": 822,
+   "last": 943,
+   "max_conf": 0.8,
+   "bbox_last": [
+    890,
+    190,
+    994,
+    285
+   ]
+  },
+  "89": {
+   "class": "car",
+   "first": 827,
+   "last": 924,
+   "max_conf": 0.9,
+   "bbox_last": [
+    19,
+    232,
+    179,
+    324
+   ]
+  },
+  "91": {
+   "class": "motorcycle",
+   "first": 830,
+   "last": 877,
+   "max_conf": 0.86,
+   "bbox_last": [
+    0,
+    413,
+    195,
+    715
+   ]
+  },
+  "92": {
+   "class": "car",
+   "first": 832,
+   "last": 908,
+   "max_conf": 0.93,
+   "bbox_last": [
+    0,
+    331,
+    120,
+    620
+   ]
+  },
+  "93": {
+   "class": "car",
+   "first": 839,
+   "last": 852,
+   "max_conf": 0.84,
+   "bbox_last": [
+    503,
+    221,
+    635,
+    378
+   ]
+  },
+  "96": {
+   "class": "car",
+   "first": 876,
+   "last": 876,
+   "max_conf": 0.44,
+   "bbox_last": [
+    0,
+    183,
+    218,
+    285
+   ]
+  },
+  "97": {
+   "class": "car",
+   "first": 879,
+   "last": 896,
+   "max_conf": 0.51,
+   "bbox_last": [
+    1050,
+    146,
+    1126,
+    393
+   ]
+  },
+  "99": {
+   "class": "car",
+   "first": 893,
+   "last": 914,
+   "max_conf": 0.8,
+   "bbox_last": [
+    10,
+    235,
+    144,
+    308
+   ]
+  },
+  "100": {
+   "class": "car",
+   "first": 918,
+   "last": 943,
+   "max_conf": 0.83,
+   "bbox_last": [
+    625,
+    199,
+    781,
+    318
+   ]
+  },
+  "101": {
+   "class": "car",
+   "first": 926,
+   "last": 943,
+   "max_conf": 0.89,
+   "bbox_last": [
+    293,
+    219,
+    677,
+    401
+   ]
+  }
+ }
+}

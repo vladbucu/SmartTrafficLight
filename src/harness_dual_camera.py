@@ -16,7 +16,7 @@ from typing import Optional, Tuple
 import cv2
 import numpy as np
 
-from detector_tracker import VehicleDetectorTracker
+from detector_tracker import VehicleDetectorTracker, VEHICLE_CLASSES
 from plate_detector import PlateOCRTracker
 from dual_camera_analyzer import DualCameraAnalyzer
 from vehicle_database import VehicleDatabase
@@ -198,7 +198,7 @@ def main():
 
     # Initialize components
     print("Initializing...")
-    detector = VehicleDetectorTracker(conf=0.4, device="cpu")
+    detector = VehicleDetectorTracker(conf=0.4, device="cpu", classes=VEHICLE_CLASSES)
     plate_tracker = PlateOCRTracker(confidence_threshold=0.5, frame_skip=3)
     analyzer = DualCameraAnalyzer(stationary_threshold_sec=3.0, max_moving_speed=2.0)
     vehicle_db = VehicleDatabase(args.db)

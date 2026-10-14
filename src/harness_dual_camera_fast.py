@@ -11,7 +11,7 @@ from typing import Optional, Tuple
 import cv2
 import numpy as np
 
-from detector_tracker import VehicleDetectorTracker
+from detector_tracker import VehicleDetectorTracker, VEHICLE_CLASSES
 from dual_camera_analyzer import DualCameraAnalyzer
 from vehicle_database import VehicleDatabase
 from config_loader import load_config
@@ -171,7 +171,7 @@ def main():
     config = load_config(args.config)
 
     print("Initializing (FAST MODE - no OCR)...")
-    detector = VehicleDetectorTracker(conf=0.4, device="cpu")
+    detector = VehicleDetectorTracker(conf=0.4, device="cpu", classes=VEHICLE_CLASSES)
     analyzer = DualCameraAnalyzer(stationary_threshold_sec=3.0, max_moving_speed=2.0)
 
     all_csv_rows = []

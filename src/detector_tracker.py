@@ -10,6 +10,10 @@ import numpy as np
 from ultralytics import YOLO
 
 
+# COCO ids: motorcycle, car, bus, truck (person=0 and bicycle=1 are excluded)
+VEHICLE_CLASSES = [2, 3, 5, 7]
+
+
 @dataclass
 class Detection:
     track_id: int
